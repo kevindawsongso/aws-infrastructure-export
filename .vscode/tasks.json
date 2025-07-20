@@ -1,0 +1,74 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Export AWS Infrastructure",
+            "type": "shell",
+            "command": "${workspaceFolder}/scripts/export_infrastructure.sh",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Convert to CloudFormation",
+            "type": "shell",
+            "command": "python3",
+            "args": [
+                "${workspaceFolder}/scripts/cloudformation_converter.py",
+                "${input:exportDirectory}"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Convert to Terraform",
+            "type": "shell",
+            "command": "python3",
+            "args": [
+                "${workspaceFolder}/scripts/terraform_converter.py",
+                "${input:exportDirectory}"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Full Infrastructure Export and Convert",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Export AWS Infrastructure",
+                "Convert to CloudFormation",
+                "Convert to Terraform"
+            ],
+            "group": "build"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "exportDirectory",
+            "description": "Path to the export directory",
+            "default": "${workspaceFolder}/exports",
+            "type": "promptString"
+        }
+    ]
+}
+

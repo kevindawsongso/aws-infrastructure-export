@@ -1,0 +1,16 @@
+{
+    "python.defaultInterpreterPath": "python3",
+    "terminal.integrated.defaultProfile.osx": "bash",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "files.associations": {
+        "*.tf": "terraform",
+        "*.tfvars": "terraform"
+    },
+    "terraform.languageServer": {
+        "enabled": true
+    },
+    "aws.telemetry": false,
+    "git.autofetch": true
+}
+
