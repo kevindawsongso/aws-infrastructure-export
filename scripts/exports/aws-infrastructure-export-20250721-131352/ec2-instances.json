@@ -1,0 +1,331 @@
+{
+    "Reservations": [
+        {
+            "ReservationId": "r-00eb6e3fc42517c85",
+            "OwnerId": "114326583326",
+            "Groups": [],
+            "Instances": [
+                {
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2025-07-18T15:19:55+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-07eb3ce1a182b3dde"
+                            }
+                        }
+                    ],
+                    "ClientToken": "terraform-20250718151952776300000001",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::114326583326:instance-profile/ssm-profile",
+                        "Id": "AIPARVHTFHAPAMRKAE24M"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "114326583326",
+                                "PublicDnsName": "ec2-54-85-196-185.compute-1.amazonaws.com",
+                                "PublicIp": "54.85.196.185"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2025-07-18T15:19:54+00:00",
+                                "AttachmentId": "eni-attach-03a634fd8ccd85ae9",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupId": "sg-09bc60dcbcf05476a",
+                                    "GroupName": "honeypot-sg"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "0a:ff:cb:32:52:07",
+                            "NetworkInterfaceId": "eni-03466e433b64744e7",
+                            "OwnerId": "114326583326",
+                            "PrivateDnsName": "ip-10-0-101-16.ec2.internal",
+                            "PrivateIpAddress": "10.0.101.16",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "114326583326",
+                                        "PublicDnsName": "ec2-54-85-196-185.compute-1.amazonaws.com",
+                                        "PublicIp": "54.85.196.185"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-0-101-16.ec2.internal",
+                                    "PrivateIpAddress": "10.0.101.16"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0d8787c1c7b15e6df",
+                            "VpcId": "vpc-003bbf8c0603d3d75",
+                            "InterfaceType": "interface",
+                            "Operator": {
+                                "Managed": false
+                            }
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupId": "sg-09bc60dcbcf05476a",
+                            "GroupName": "honeypot-sg"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "StateReason": {
+                        "Code": "Client.UserInitiatedShutdown",
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+                    },
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "splunk"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2025-07-18T15:19:54+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default",
+                        "RebootMigration": "default"
+                    },
+                    "CurrentInstanceBootMode": "legacy-bios",
+                    "NetworkPerformanceOptions": {
+                        "BandwidthWeighting": "default"
+                    },
+                    "Operator": {
+                        "Managed": false
+                    },
+                    "InstanceId": "i-010d91da3ba3b37f2",
+                    "ImageId": "ami-0fc5d935ebf8bc3bc",
+                    "State": {
+                        "Code": 80,
+                        "Name": "stopped"
+                    },
+                    "PrivateDnsName": "ip-10-0-101-16.ec2.internal",
+                    "PublicDnsName": "ec2-54-85-196-185.compute-1.amazonaws.com",
+                    "StateTransitionReason": "User initiated (2025-07-21 17:11:22 GMT)",
+                    "KeyName": "splunk",
+                    "AmiLaunchIndex": 0,
+                    "ProductCodes": [],
+                    "InstanceType": "t2.micro",
+                    "LaunchTime": "2025-07-21T16:53:18+00:00",
+                    "Placement": {
+                        "GroupName": "",
+                        "Tenancy": "default",
+                        "AvailabilityZone": "us-east-1a"
+                    },
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "SubnetId": "subnet-0d8787c1c7b15e6df",
+                    "VpcId": "vpc-003bbf8c0603d3d75",
+                    "PrivateIpAddress": "10.0.101.16",
+                    "PublicIpAddress": "54.85.196.185"
+                }
+            ]
+        },
+        {
+            "ReservationId": "r-03c2717f327341e2b",
+            "OwnerId": "114326583326",
+            "Groups": [],
+            "Instances": [
+                {
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2025-07-18T15:19:56+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0b19f41ba732a7fc3"
+                            }
+                        }
+                    ],
+                    "ClientToken": "terraform-20250718151952776300000002",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::114326583326:instance-profile/ssm-profile",
+                        "Id": "AIPARVHTFHAPAMRKAE24M"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2025-07-18T15:19:56+00:00",
+                                "AttachmentId": "eni-attach-051561f1791c94c3f",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupId": "sg-063b8dd6b1922c744",
+                                    "GroupName": "ssm-sg"
+                                },
+                                {
+                                    "GroupId": "sg-09bc60dcbcf05476a",
+                                    "GroupName": "honeypot-sg"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "0a:ff:d7:4a:d0:d5",
+                            "NetworkInterfaceId": "eni-08862bfe2645b992d",
+                            "OwnerId": "114326583326",
+                            "PrivateDnsName": "ip-10-0-1-146.ec2.internal",
+                            "PrivateIpAddress": "10.0.1.146",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-0-1-146.ec2.internal",
+                                    "PrivateIpAddress": "10.0.1.146"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0e7dd6d710ba896a5",
+                            "VpcId": "vpc-003bbf8c0603d3d75",
+                            "InterfaceType": "interface",
+                            "Operator": {
+                                "Managed": false
+                            }
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupId": "sg-063b8dd6b1922c744",
+                            "GroupName": "ssm-sg"
+                        },
+                        {
+                            "GroupId": "sg-09bc60dcbcf05476a",
+                            "GroupName": "honeypot-sg"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "StateReason": {
+                        "Code": "Client.UserInitiatedShutdown",
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+                    },
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "honeypot"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2025-07-18T15:19:56+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default",
+                        "RebootMigration": "default"
+                    },
+                    "CurrentInstanceBootMode": "legacy-bios",
+                    "NetworkPerformanceOptions": {
+                        "BandwidthWeighting": "default"
+                    },
+                    "Operator": {
+                        "Managed": false
+                    },
+                    "InstanceId": "i-03a8d73b8fe9bcf80",
+                    "ImageId": "ami-0fc5d935ebf8bc3bc",
+                    "State": {
+                        "Code": 80,
+                        "Name": "stopped"
+                    },
+                    "PrivateDnsName": "ip-10-0-1-146.ec2.internal",
+                    "PublicDnsName": "",
+                    "StateTransitionReason": "User initiated (2025-07-21 17:11:22 GMT)",
+                    "KeyName": "honeypot",
+                    "AmiLaunchIndex": 0,
+                    "ProductCodes": [],
+                    "InstanceType": "t2.micro",
+                    "LaunchTime": "2025-07-21T15:07:40+00:00",
+                    "Placement": {
+                        "GroupName": "",
+                        "Tenancy": "default",
+                        "AvailabilityZone": "us-east-1a"
+                    },
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "SubnetId": "subnet-0e7dd6d710ba896a5",
+                    "VpcId": "vpc-003bbf8c0603d3d75",
+                    "PrivateIpAddress": "10.0.1.146"
+                }
+            ]
+        }
+    ]
+}

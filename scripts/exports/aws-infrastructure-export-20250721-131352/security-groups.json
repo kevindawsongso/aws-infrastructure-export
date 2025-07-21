@@ -1,0 +1,182 @@
+{
+    "SecurityGroups": [
+        {
+            "GroupId": "sg-03d9e69676f0229c8",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-003bbf8c0603d3d75",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:114326583326:security-group/sg-03d9e69676f0229c8",
+            "OwnerId": "114326583326",
+            "GroupName": "splunk-sg",
+            "Description": "Managed by Terraform",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 8000,
+                    "ToPort": 8000,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 9997,
+                    "ToPort": 9997,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "10.0.0.0/16"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-038495366dccebcb2",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-003bbf8c0603d3d75",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:114326583326:security-group/sg-038495366dccebcb2",
+            "OwnerId": "114326583326",
+            "GroupName": "default",
+            "Description": "default VPC security group",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [
+                        {
+                            "UserId": "114326583326",
+                            "GroupId": "sg-038495366dccebcb2"
+                        }
+                    ],
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-0eff76ad9521eb7f0",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-003bbf8c0603d3d75",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:114326583326:security-group/sg-0eff76ad9521eb7f0",
+            "OwnerId": "114326583326",
+            "GroupName": "nat-sg",
+            "Description": "Managed by Terraform",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 0,
+                    "ToPort": 65535,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "10.0.0.0/16"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-063b8dd6b1922c744",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-003bbf8c0603d3d75",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:114326583326:security-group/sg-063b8dd6b1922c744",
+            "OwnerId": "114326583326",
+            "GroupName": "ssm-sg",
+            "Description": "Managed by Terraform",
+            "IpPermissions": []
+        },
+        {
+            "GroupId": "sg-09bc60dcbcf05476a",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-003bbf8c0603d3d75",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:114326583326:security-group/sg-09bc60dcbcf05476a",
+            "OwnerId": "114326583326",
+            "GroupName": "honeypot-sg",
+            "Description": "Wide-open SG for honeypot",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 0,
+                    "ToPort": 65535,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "Buckets": [
+        {
+            "Name": "aws-sam-cli-managed-default-samclisourcebucket-ogwdemfjm3ae",
+            "CreationDate": "2025-06-07T18:53:05+00:00"
+        },
+        {
+            "Name": "cloudtrail-logs-soc-lab-us-east-1",
+            "CreationDate": "2025-07-12T18:24:33+00:00"
+        },
+        {
+            "Name": "do-not-delete-ssm-diagnosis-114326583326-us-east-1-1bb4i",
+            "CreationDate": "2025-07-13T02:49:50+00:00"
+        },
+        {
+            "Name": "kevindawson-resume-bucket",
+            "CreationDate": "2025-05-22T20:13:53+00:00"
+        }
+    ],
+    "Owner": {
+        "DisplayName": "dawsonfamilygso",
+        "ID": "6ebb0d2dfa82e2362c1259574429cbde1a3b1c6c1ef63b9601a0868d933818ff"
+    },
+    "Prefix": null
+}

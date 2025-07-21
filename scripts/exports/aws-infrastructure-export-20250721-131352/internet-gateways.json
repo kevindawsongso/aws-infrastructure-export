@@ -1,0 +1,20 @@
+{
+    "InternetGateways": [
+        {
+            "Attachments": [
+                {
+                    "State": "available",
+                    "VpcId": "vpc-003bbf8c0603d3d75"
+                }
+            ],
+            "InternetGatewayId": "igw-076fbc5c6763c1e56",
+            "OwnerId": "114326583326",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "soc-lab-gateway"
+                }
+            ]
+        }
+    ]
+}
